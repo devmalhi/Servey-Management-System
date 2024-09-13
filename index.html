@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munesh Kumar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Servey Management System</h1>
+    <form action="" id="AddRow">
+      <label for="Name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      <label for="city">City:</label>
+      <input type="text" id="city" required>
+      <button type="submit" onclick=addRow()>Add Row</button>
+    </form>
+    <table id="mytable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>age</th>
+          <th>City</th>
+          <th>actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <thead>
+          <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>USA</td>
+            <td><button onclick="editButton()">Edit</button>
+            <button onclick="deleteButton()">Delete</button>
+            </td>
+          </tr>
+        </thead>
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
